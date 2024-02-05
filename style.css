@@ -34,7 +34,8 @@ body {
     display: grid;
     justify-content: center;
     font-family: var(--ff-outfit);
-    width: 100%
+    width: 100%;
+    min-height: 100vh;
 }
 
 .container {
