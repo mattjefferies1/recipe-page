@@ -1,0 +1,208 @@
+:root {
+    --ff-outfit: 'Outfit', sans-serif;
+    --ff-young: 'Young Serif', serif;
+
+    --fw-normal-out: 400;
+    --fw-normal-young: 400;
+    --fw-semi-bold:600;
+    --fw-bold:700;
+
+    --clr-nutmeg: hsl(14, 45%, 36%);
+    --clr-raspberry: hsl(332, 51%, 32%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-rose-white:hsl(330, 100%, 98%);
+    --clr-eggshell:hsl(30, 54%, 90%);
+    --clr-grey:hsl(30, 18%, 87%);
+    --clr-brown:hsl(30, 10%, 34%);
+    --clr-charcoal:hsl(24, 5%, 18%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--clr-eggshell);
+    display: grid;
+    justify-content: center;
+    font-family: var(--ff-outfit);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    border-radius: 1.5rem;
+    background-color: var(--clr-white);
+    max-width: 740px;
+    height: fit-content;
+    padding-bottom: 1.5rem;
+}
+
+
+header {
+    width: 100%;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.header-img {
+    width: 100%;
+    margin-top: 2.5rem;
+    border-radius: .8rem;
+    
+}
+
+.main-content {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: var(--ff-young);
+    font-weight: var(--fw-normal-young);
+    color: var(var(--clr-charcoal));
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+p{
+    font-weight: var(--fw-normal-young);
+    color: var(--clr-brown);
+    padding: 0.3rem;
+}
+
+.preparation {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1.55rem 1.75rem 1.15rem;
+    background-color: var(--clr-rose-white);
+    border-radius: .6rem;
+}
+
+.preparation p {
+    margin-left: 0.8rem;
+}
+
+.preparation h2 {
+    font-weight: var(--fw-bold);
+    color: var(--clr-raspberry);
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+.preparation ul {
+    margin-left: 1.5rem;
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
+    margin-bottom: 1.3rem;
+    margin-top: 1.65rem;
+    font-family: var(--ff-young);
+    font-size: 1.7rem;
+    letter-spacing: .028rem;
+    color: var(--clr-nutmeg);
+    font-weight: var(--fw-normal-young);
+}
+
+.ingredients,
+.instructions{
+    padding-bottom: 1.5rem;
+}
+
+hr {
+    opacity: .3;
+}
+
+
+.ingredients ul,
+.instructions li{
+    margin-left: 1.5rem;
+}
+.ingredients p {
+    margin-left: 0.8rem;
+}
+.instructions p {
+    margin-left: .8rem;
+}
+
+ol {
+    font-weight: var(--fw-bold);
+}
+
+li::marker {
+    color: var(--clr-nutmeg);
+}
+
+.instructions ol li h4 {
+    display: inline-block;
+    margin-left: .5rem;
+    color: var(--clr-nutmeg);
+}
+
+.nutrition .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.nutrition p{
+    font-weight: var(--fw-normal-young);
+}
+
+.nutrition .col-1 {
+    width: 50%;
+}
+
+.nutrition .col-1 p{
+    margin-left: 2rem;
+}
+
+.nutrition .col-2{
+    width: 50%;
+}
+
+.nutrition .col-2 h4{
+    color: var(--clr-nutmeg);
+}
+
+.author { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 1.5rem;
+}
+.author a { 
+    color: hsl(228, 100%, 48%); 
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        min-height: fit-content;
+    }
+    .container {
+        max-width: none;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .header-img {
+        margin: 0;
+        border-radius: 0;
+    }
+}
