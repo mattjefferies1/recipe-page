@@ -30,6 +30,7 @@ body {
     display: grid;
     justify-content: center;
     font-family: var(--ff-outfit);
+    width: 100%
 }
 
 .container {
@@ -143,7 +144,7 @@ li::marker {
     color: var(--clr-nutmeg);
 }
 
-.instructions ol li h4 {
+.instructions ol li h3 {
     display: inline-block;
     margin-left: .5rem;
     color: var(--clr-nutmeg);
@@ -174,7 +175,7 @@ li::marker {
     width: 50%;
 }
 
-.nutrition .col-2 h4{
+.nutrition .col-2 h3{
     color: var(--clr-nutmeg);
 }
 
