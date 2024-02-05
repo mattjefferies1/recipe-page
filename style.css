@@ -35,7 +35,6 @@ body {
     display: grid;
     justify-content: center;
     font-family: var(--ff-outfit);
-    min-height: 2000px;
 }
 
 .container {
@@ -188,6 +187,7 @@ li::marker {
 .author { 
     font-size: 11px; 
     text-align: center; 
+    padding: 2rem;
 }
 .author a { 
     color: hsl(228, 100%, 48%); 
